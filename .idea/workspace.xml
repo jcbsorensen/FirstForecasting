@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b64ae94-e6c9-4c54-8112-d8b1fde461dc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Vt1ddQM3NIixQ5RbcNb24CSiMh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git Projects\PyCharm Projects\FirstForecasting" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.untitled">
+    <configuration name="01_univariate_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/01_univariate_lstm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02_cnn_lstm_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_25" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_25/02_cnn_lstm_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03_multivariate_encoder_decoder_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/03_multivariate_encoder_decoder_lstm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="05_convlstm_encoder_decoder_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/05_convlstm_encoder_decoder_lstm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LSTMDeepModels" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LSTMDeepModels.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="untitled" type="PythonConfigurationType" factoryName="Python">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.02_cnn_lstm_model" />
+        <item itemvalue="Python.LSTMDeepModels" />
+        <item itemvalue="Python.03_multivariate_encoder_decoder_lstm" />
+        <item itemvalue="Python.05_convlstm_encoder_decoder_lstm" />
+        <item itemvalue="Python.01_univariate_lstm" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b64ae94-e6c9-4c54-8112-d8b1fde461dc" name="Default Changelist" comment="" />
+      <created>1578057665229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578057665229</updated>
+      <workItem from="1578057667004" duration="169000" />
+      <workItem from="1578057859459" duration="17530000" />
+      <workItem from="1578140041123" duration="19873000" />
+      <workItem from="1578411411887" duration="17097000" />
+      <workItem from="1578506859158" duration="10770000" />
+      <workItem from="1578595106977" duration="12164000" />
+      <workItem from="1578817591292" duration="21259000" />
+      <workItem from="1578849432325" duration="11036000" />
+      <workItem from="1578941424280" duration="3957000" />
+      <workItem from="1578945528100" duration="5262000" />
+      <workItem from="1579028826878" duration="6396000" />
+      <workItem from="1579035245688" duration="1745000" />
+      <workItem from="1579111405987" duration="5046000" />
+      <workItem from="1579116644180" duration="5223000" />
+      <workItem from="1579186720755" duration="847000" />
+      <workItem from="1579187579911" duration="5628000" />
+      <workItem from="1579200146381" duration="3685000" />
+      <workItem from="1579203847007" duration="49000" />
+      <workItem from="1579203906147" duration="2675000" />
+      <workItem from="1579341962868" duration="10570000" />
+      <workItem from="1579354923231" duration="22940000" />
+      <workItem from="1579438355963" duration="37136000" />
+      <workItem from="1579612519306" duration="8486000" />
+      <workItem from="1579718171623" duration="10058000" />
+      <workItem from="1579790491589" duration="12491000" />
+      <workItem from="1579879874482" duration="19729000" />
+      <workItem from="1579948652865" duration="34214000" />
+      <workItem from="1580135405836" duration="5407000" />
+      <workItem from="1580225080566" duration="17368000" />
+      <workItem from="1580322553261" duration="6179000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="989" y="452" key="#xdebugger.XInspectDialog" timestamp="1578833085703">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="989" y="452" key="#xdebugger.XInspectDialog/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1578833085703" />
+    <state width="1730" height="466" key="DebuggerActiveHint" timestamp="1579114801589">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1730" height="466" key="DebuggerActiveHint/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1579114801589" />
+    <state width="2517" height="319" key="GridCell.Tab.0.bottom" timestamp="1580328237464">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
+    <state width="2517" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237464" />
+    <state width="2517" height="319" key="GridCell.Tab.0.center" timestamp="1580328237464">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
+    <state width="2517" height="319" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237464" />
+    <state width="2517" height="319" key="GridCell.Tab.0.left" timestamp="1580328237464">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
+    <state width="2517" height="319" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237464" />
+    <state width="2517" height="319" key="GridCell.Tab.0.right" timestamp="1580328237464">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
+    <state width="2517" height="319" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237464" />
+    <state width="2517" height="319" key="GridCell.Tab.1.bottom" timestamp="1580328237465">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714324" />
+    <state width="2517" height="319" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237465" />
+    <state width="2517" height="319" key="GridCell.Tab.1.center" timestamp="1580328237464">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
+    <state width="2517" height="319" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237464" />
+    <state width="2517" height="319" key="GridCell.Tab.1.left" timestamp="1580328237464">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
+    <state width="2517" height="319" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237464" />
+    <state width="2517" height="319" key="GridCell.Tab.1.right" timestamp="1580328237464">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="330" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
+    <state width="2517" height="319" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580328237464" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1579726406676">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1579726406676" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1579439949315">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="966" height="587" key="XDebugger.FullValuePopup/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579348835257" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1579439949315" />
+    <state x="976" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1580322555536">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-1188" y="578" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579948652860" />
+    <state x="976" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580322555536" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_18/03_arima_model.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19/01_cnn_univariate_model.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19/02_multichannel_cnn.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19/02_multichannel_cnn.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/01_univariate_lstm.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/05_convlstm_encoder_decoder_lstm.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/03_multivariate_encoder_decoder_lstm.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_25/02_cnn_lstm_model.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AdvDeepModels.py</url>
+          <line>325</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="train_y" />
+        <watch expression="train_y" />
+        <watch expression="X" />
+        <watch expression="trainX" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FirstForecasting$LSTMDeepModels.coverage" NAME="LSTMDeepModels Coverage Results" MODIFIED="1579203392954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$02_multichannel_cnn.coverage" NAME="02_multichannel_cnn Coverage Results" MODIFIED="1579114879638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$03_arima_model.coverage" NAME="03_arima_model Coverage Results" MODIFIED="1578597239222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_18" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$01_univariate_lstm.coverage" NAME="01_univariate_lstm Coverage Results" MODIFIED="1579121957653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$03_multivariate_encoder_decoder_lstm.coverage" NAME="03_multivariate_encoder_decoder_lstm Coverage Results" MODIFIED="1579203213016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1580327272281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$DeepModels.coverage" NAME="DeepModels Coverage Results" MODIFIED="1579113002896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$ARIMAModels.coverage" NAME="ARIMAModels Coverage Results" MODIFIED="1578827559372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$NaiveModels.coverage" NAME="NaiveModels Coverage Results" MODIFIED="1578606300800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$01_cnn_univariate_model.coverage" NAME="01_cnn_univariate_model Coverage Results" MODIFIED="1579111448924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$04_naive_forecasts.coverage" NAME="04_naive_forecasts Coverage Results" MODIFIED="1578339042142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_17" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$05_convlstm_encoder_decoder_lstm.coverage" NAME="05_convlstm_encoder_decoder_lstm Coverage Results" MODIFIED="1579201527897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$02_cnn_lstm_model.coverage" NAME="02_cnn_lstm_model Coverage Results" MODIFIED="1579379684710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_25" />
+  </component>
+</project>
