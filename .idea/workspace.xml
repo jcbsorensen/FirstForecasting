@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b64ae94-e6c9-4c54-8112-d8b1fde461dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +44,18 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Git Projects\PyCharm Projects\FirstForecasting" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python.untitled">
     <configuration name="01_univariate_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -183,6 +194,9 @@
       <module name="FirstForecasting" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -207,18 +221,6 @@
         <item itemvalue="Python.01_univariate_lstm" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -260,11 +262,23 @@
       <workItem from="1580135405836" duration="5407000" />
       <workItem from="1580225080566" duration="17368000" />
       <workItem from="1580322553261" duration="7885000" />
+      <workItem from="1580363503209" duration="229000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="989" y="452" key="#xdebugger.XInspectDialog" timestamp="1578833085703">
@@ -385,18 +399,18 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FirstForecasting$LSTMDeepModels.coverage" NAME="LSTMDeepModels Coverage Results" MODIFIED="1579203392954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$02_multichannel_cnn.coverage" NAME="02_multichannel_cnn Coverage Results" MODIFIED="1579114879638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$03_arima_model.coverage" NAME="03_arima_model Coverage Results" MODIFIED="1578597239222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_18" />
     <SUITE FILE_PATH="coverage/FirstForecasting$01_univariate_lstm.coverage" NAME="01_univariate_lstm Coverage Results" MODIFIED="1579121957653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$03_multivariate_encoder_decoder_lstm.coverage" NAME="03_multivariate_encoder_decoder_lstm Coverage Results" MODIFIED="1579203213016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1580327272281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$DeepModels.coverage" NAME="DeepModels Coverage Results" MODIFIED="1579113002896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$ARIMAModels.coverage" NAME="ARIMAModels Coverage Results" MODIFIED="1578827559372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$NaiveModels.coverage" NAME="NaiveModels Coverage Results" MODIFIED="1578606300800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FirstForecasting$01_cnn_univariate_model.coverage" NAME="01_cnn_univariate_model Coverage Results" MODIFIED="1579111448924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19" />
     <SUITE FILE_PATH="coverage/FirstForecasting$04_naive_forecasts.coverage" NAME="04_naive_forecasts Coverage Results" MODIFIED="1578339042142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_17" />
     <SUITE FILE_PATH="coverage/FirstForecasting$05_convlstm_encoder_decoder_lstm.coverage" NAME="05_convlstm_encoder_decoder_lstm Coverage Results" MODIFIED="1579201527897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$02_multichannel_cnn.coverage" NAME="02_multichannel_cnn Coverage Results" MODIFIED="1579114879638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$LSTMDeepModels.coverage" NAME="LSTMDeepModels Coverage Results" MODIFIED="1579203392954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$03_arima_model.coverage" NAME="03_arima_model Coverage Results" MODIFIED="1578597239222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_18" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$NaiveModels.coverage" NAME="NaiveModels Coverage Results" MODIFIED="1578606300800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1580327272281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$ARIMAModels.coverage" NAME="ARIMAModels Coverage Results" MODIFIED="1578827559372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$03_multivariate_encoder_decoder_lstm.coverage" NAME="03_multivariate_encoder_decoder_lstm Coverage Results" MODIFIED="1579203213016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$DeepModels.coverage" NAME="DeepModels Coverage Results" MODIFIED="1579113002896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$01_cnn_univariate_model.coverage" NAME="01_cnn_univariate_model Coverage Results" MODIFIED="1579111448924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19" />
     <SUITE FILE_PATH="coverage/FirstForecasting$02_cnn_lstm_model.coverage" NAME="02_cnn_lstm_model Coverage Results" MODIFIED="1579379684710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_25" />
   </component>
 </project>
