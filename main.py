@@ -22,7 +22,7 @@ from scipy import stats
 raw_data = pd.read_csv('./data/train_v2.csv')
 del raw_data['Unnamed: 0']
 subset_data = raw_data.loc[
-    raw_data.Store.isin([4, 5, 6]), ['Date', 'Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo',
+    raw_data.Store.isin([4]), ['Date', 'Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo',
                                      'SchoolHoliday', 'Store']]
 # Map Day of Week and Set Date to Index
 subset_data['Date'] = pd.to_datetime(subset_data['Date'])
@@ -81,25 +81,25 @@ def lr_finder_model(config, X, y):
     return model
 
 
-#columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'SchoolHoliday']
-columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'SchoolHoliday', 'Store']
+columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'SchoolHoliday']
+#columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'SchoolHoliday', 'Store']
 
 # Univariate LSTM Model
-setting = ADM.MS_create_setting(multi_steps=37, repeats=1, target='Sales', category='Store', predict_transform='minmax',
+setting = ADM.MS_create_setting(multi_steps=37, repeats=5, target='Sales', category=None, predict_transform='minmax',
                                 minmax=['Sales', 'Customers'])
-model_configs = ADM.MS_lstm_model_configs(n_input=[22], n_nodes=[64], n_epochs=[35], n_batch=[7], n_seq=[2],
+model_configs = ADM.MS_lstm_model_configs(n_input=[74], n_nodes=[64], n_epochs=[35], n_batch=[7], n_seq=[2],
                                           model_type='cnnlstm')
-#train, test = ADM.MS_split_dataset(subset_data, config=setting, columns=columns)
+train, test = ADM.MS_split_dataset(subset_data, config=setting, columns=columns)
 
 
 
-train, test = pd.DataFrame(columns=columns), pd.DataFrame(columns=columns)
+#train, test = pd.DataFrame(columns=columns), pd.DataFrame(columns=columns)
 
-for i in [4, 5, 6]:
-    subset_store = subset_data.loc[subset_data.Store == i].sort_index()
-    sub_train, sub_test = ADM.MS_split_dataset(subset_store, config=setting, columns=columns)
-    train = train.append(sub_train)
-    test = test.append(sub_test)
+#for i in [4, 5, 6]:
+#    subset_store = subset_data.loc[subset_data.Store == i].sort_index()
+#    sub_train, sub_test = ADM.MS_split_dataset(subset_store, config=setting, columns=columns)
+#    train = train.append(sub_train)
+#    test = test.append(sub_test)
 
 
 # evaluate model and get scores
@@ -160,30 +160,29 @@ print(timer() - start)
 # train = pd.DataFrame(scaler.transform(train), columns=train.columns, index=train.index)
 # test = pd.DataFrame(scaler.transform(test), columns=test.columns, index=test.index)
 #
-# df_result = ADM.MS_grid_search(ADM.MS_build_multivar_cnnlstm_modelB, model_configs=model_configs, train=train, test=test, setting=setting, iterations=5)
+df_result = ADM.MS_grid_search(ADM.MS_build_multivar_cnnlstm_modelB, model_configs=model_configs, train=train, test=test, setting=setting, iterations=5)
 
-multi_steps, repeats, target, category, predict_transform, minmax, stdiz, onehot_encode = setting
-train, test, scalers, targetScalers = ADM.MS_preprocess(train=train, test=test, target=target,
-                                                        predict_transform=predict_transform, minmax=minmax,
-                                                        stdiz=stdiz, onehot_encode=onehot_encode)
-
-model = ADM.MS_build_multivar_cnnlstm_modelB(train=train, model_configs=model_configs[0], multi_steps=37, target='Sales', category='Store')
-testB = ADM.MS_forecast(model=model, history=train.loc[train.Store == 4], test=test.loc[test.Store == 4], model_configs=model_configs[0])
-
-train, test = ADM.MS_preprocess(train=train.loc[train.Store == 4], test=testB, target=target, predict_transform=predict_transform,
-                                minmax=minmax, stdiz=stdiz, onehot_encode=onehot_encode,
-                                oldScalers=scalers, oldTargetScalers=targetScalers)
-
-
-# testB['predicted'] = targetScaler.inverse_transform(testB[['predicted']])
-# testB['Sales'] = targetScaler.inverse_transform(testB[['Sales']])
-subset_dataB = subset_data.loc[subset_data.Store == 4]
+#multi_steps, repeats, target, category, predict_transform, minmax, stdiz, onehot_encode = setting
+#train, test, scalers, targetScalers = ADM.MS_preprocess(train=train, test=test, target=target,
+#                                                        predict_transform=predict_transform, minmax=minmax,
+#                                                        stdiz=stdiz, onehot_encode=onehot_encode)
 #
-ax = plt.gca()
-subset_dataB.iloc[850:-37].plot(y='Sales', kind='line', ax=ax)
-testB.plot(y='predicted', kind='line', ax=ax)
-testB.plot(y='Sales', kind='line', label='actual', ax=ax)
-plt.show()
+#model = ADM.MS_build_multivar_cnnlstm_modelB(train=train, model_configs=model_configs[0], multi_steps=37, target='Sales', category='Store')
+#testB = ADM.MS_forecast(model=model, history=train.loc[train.Store == 4], test=test.loc[test.Store == 4], model_configs=model_configs[0])
+#
+#train, test = ADM.MS_preprocess(train=train.loc[train.Store == 4], test=testB, target=target, predict_transform=predict_transform,
+#                                minmax=minmax, stdiz=stdiz, onehot_encode=onehot_encode,
+#                                oldScalers=scalers, oldTargetScalers=targetScalers)
+
+
+
+#subset_dataB = subset_data.loc[subset_data.Store == 4]
+##
+#ax = plt.gca()
+#subset_dataB.iloc[850:-37].plot(y='Sales', kind='line', ax=ax)
+#testB.plot(y='predicted', kind='line', ax=ax)
+#testB.plot(y='Sales', kind='line', label='actual', ax=ax)
+#plt.show()
 
 
 # [22, 64, 50, 11, 2, 'cnnlstm']

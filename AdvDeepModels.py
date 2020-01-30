@@ -42,7 +42,10 @@ def MS_split_dataset(dataframe, config, columns):
 # evaluate one or more weekly forecasts against expected values
 def MS_evaluate_forecasts(df, multi_steps, repeats, target, category):
     # calculate an RMSE score for each day
-    categories_count = len(df[category].unique().tolist())
+    if category != None:
+        categories_count = len(df[category].unique().tolist())
+    else:
+        categories_count = 1
     df = df.loc[:, [target, 'predicted']]
     df.loc[:, 'rmse'] = 0
     df.loc[:, 'squared error'] = 0
