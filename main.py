@@ -185,5 +185,5 @@ df_result = ADM.MS_grid_search(ADM.MS_build_multivar_cnnlstm_modelB, model_confi
 #plt.show()
 
 
-# [22, 64, 50, 11, 2, 'cnnlstm']
-# Result: 1502.9119999999998 STD: 30.546353890440006
+#[74, 64, 35, 7, 2, 'cnnlstm']
+#Result: 2217.418 STD: 66.96683071491442
