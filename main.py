@@ -87,7 +87,7 @@ columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'School
 # Univariate LSTM Model
 setting = ADM.MS_create_setting(multi_steps=37, repeats=5, target='Sales', category=None, predict_transform='minmax',
                                 minmax=['Sales', 'Customers'])
-model_configs = ADM.MS_lstm_model_configs(n_input=[74], n_nodes=[64], n_epochs=[35], n_batch=[7], n_seq=[2],
+model_configs = ADM.MS_lstm_model_configs(n_input=[22, 28, 44, 74], n_nodes=[64], n_epochs=[35], n_batch=[7], n_seq=[2],
                                           model_type='cnnlstm')
 train, test = ADM.MS_split_dataset(subset_data, config=setting, columns=columns)
 

@@ -52,7 +52,7 @@ def MS_evaluate_forecasts(df, multi_steps, repeats, target):
 
 
 # convert history into inputs and outputs
-def MS_to_supervised(train, n_inputs, multi_steps, target):
+def MS_to_supervised(train, n_inputs, multi_steps, target, category):
     X, y = list(), list()
     rows = len(train)
     columns = train.shape[1]

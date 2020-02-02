@@ -53,7 +53,7 @@ def grid_search_diagnostics(model_function, variables, train, test, setting, mod
         train_x = train_x.reshape((train_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
         val_x = val_x.reshape((val_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
 
-        #convLSTM reshape
+        # convLSTM reshape
         #train_x = train_x.reshape((train_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
         #train_y = train_y.reshape((train_y.shape[0], train_y.shape[1], 1))
         #val_x = val_x.reshape((val_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
@@ -118,28 +118,29 @@ def grid_search_diagnostics(model_function, variables, train, test, setting, mod
     return all_loss, all_metric
 
 
-def multicat_grid_search_diagnostics(model_function, variables, train, test, setting, model_configs, data_handler, iterations=1):
+def multicat_grid_search_diagnostics(model_function, train, test, setting, model_configs, data_handler, iterations=1):
     multi_steps, repeats, target, category, predict_transform, minmax, stdiz, onehot_encode = setting
-    n_inputs, n_nodes, n_epochs, n_batch, n_seq, model_type = model_configs
 
     # preprocess data
     train, test, scalers, targetScalers = ADM.MS_preprocess(train=train, test=test, target=target,
                                                         predict_transform=predict_transform, minmax=minmax,
                                                         stdiz=stdiz, onehot_encode=onehot_encode)
 
-    print('Total configs: {}'.format(len(variables)+1))
+    print('Total configs: {}'.format(len(model_configs)+1))
     all_loss = pd.DataFrame()
     all_metric = pd.DataFrame()
 
-    for var in variables:
+    for config in model_configs:
+        n_inputs, n_nodes, n_epochs, n_batch, n_seq, model_type = config
+
         # prepare data
         train_x, train_y = data_handler(train=train, n_inputs=n_inputs, multi_steps=multi_steps, target=target, category=category)
         val_x, val_y = data_handler(train=test, n_inputs=n_inputs, multi_steps=multi_steps, target=target, category=category)
 
         # cnnLSTM reshape
-        n_timesteps, n_features, n_outputs = train_x.shape[1], train_x.shape[2], train_y.shape[1]
-        train_x = train_x.reshape((train_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
-        val_x = val_x.reshape((val_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
+        #n_timesteps, n_features, n_outputs = train_x.shape[1], train_x.shape[2], train_y.shape[1]
+        #train_x = train_x.reshape((train_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
+        #val_x = val_x.reshape((val_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
 
         #convLSTM reshape
         #train_x = train_x.reshape((train_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
@@ -154,8 +155,8 @@ def multicat_grid_search_diagnostics(model_function, variables, train, test, set
         loss_scores = list()
         metric_scores = list()
         for i in range(iterations):
-            print('Config:', var, 'Iteration Nr:', i)
-            model = model_function(var, X=train_x, y=train_y, val_X=val_x, val_y=val_y)
+            print('Config:', config, 'Iteration Nr:', i)
+            model = model_function(config, X=train_x, y=train_y, val_X=val_x, val_y=val_y)
             loss, metric = model.evaluate(val_x, val_y)
             loss_scores.append(loss)
             metric_scores.append(metric)
@@ -176,7 +177,7 @@ def multicat_grid_search_diagnostics(model_function, variables, train, test, set
         # plot train and validation loss
         plt.plot(train_loss_scores, color='blue', label='train')
         plt.plot(val_loss_scores, color='orange', label='validation')
-        plt.title('model train vs validation loss [{}]'.format(var))
+        plt.title('model train vs validation loss [{}]'.format(config))
         plt.ylabel('loss')
         plt.xlabel('epoch')
         plt.legend(loc='upper right')
@@ -185,28 +186,50 @@ def multicat_grid_search_diagnostics(model_function, variables, train, test, set
         # plot train and validation metric
         plt.plot(train_metric_scores, color='blue', label='train')
         plt.plot(val_metric_scores, color='orange', label='validation')
-        plt.title('model train vs validation metric [{}]'.format(var))
+        plt.title('model train vs validation metric [{}]'.format(config))
         plt.ylabel('mae')
         plt.xlabel('epoch')
         plt.legend(loc='upper right')
         plt.show()
 
-        all_loss[str(var)] = loss_scores
-        all_metric[str(var)] = metric_scores
+        all_loss[str(config)] = loss_scores
+        all_metric[str(config)] = metric_scores
 
         # reverse transforms (if any)
         for targetScaler in targetScalers:
             if targetScaler != None:
-                all_loss[str(var)] = np.sqrt(all_loss[str(var)])
-                all_loss[str(var)] = targetScaler.inverse_transform(all_loss[[str(var)]])
-                all_loss[str(var)] = all_loss[str(var)]**2
-                all_metric[str(var)] = targetScaler.inverse_transform(all_metric[[str(var)]])
+                all_loss[str(config)] = np.sqrt(all_loss[str(config)])
+                all_loss[str(config)] = targetScaler.inverse_transform(all_loss[[str(config)]])
+                all_loss[str(config)] = all_loss[str(config)]**2
+                all_metric[str(config)] = targetScaler.inverse_transform(all_metric[[str(config)]])
 
     all_loss.boxplot()
     plt.show()
     all_metric.boxplot()
     plt.show()
     return all_loss, all_metric
+
+
+
+
+def learning_rate_finder(model_function, train, test, setting, model_configs, data_handler):
+    multi_steps, repeats, target, category, predict_transform, minmax, stdiz, onehot_encode = setting
+    n_inputs, n_nodes, n_epochs, n_batch, n_seq, model_type = model_configs
+
+    # preprocess data
+    train, test, scalers, targetScalers = ADM.MS_preprocess(train=train, test=test, target=target,
+                                                        predict_transform=predict_transform, minmax=minmax,
+                                                        stdiz=stdiz, onehot_encode=onehot_encode)
+
+    train_x, train_y = data_handler(train=train, n_inputs=n_inputs, multi_steps=multi_steps, target=target,
+                                    category=category)
+    val_x, val_y = data_handler(train=test, n_inputs=n_inputs, multi_steps=multi_steps, target=target,
+                                category=category)
+
+    model_function(model_configs, X=train_x, y=train_y)
+
+
+    return
 
 
 class LRFinder(Callback):
