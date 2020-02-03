@@ -51,7 +51,7 @@ columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'School
 # Univariate LSTM Model
 setting = ADM.MS_create_setting(multi_steps=37, repeats=5, target='Sales', category=None, predict_transform='minmax',
                                 minmax=['Sales', 'Customers'])
-model_configs = ADM.MS_lstm_model_configs(n_input=[37], n_nodes=[50], n_epochs=[25], n_batch=[7], n_seq=[3],
+model_configs = ADM.MS_lstm_model_configs(n_input=[74], n_nodes=[50], n_epochs=[50], n_batch=[7], n_seq=[2],
                                           model_type='cnnlstm')
 train, test = ADM.MS_split_dataset(subset_data, config=setting, columns=columns)
 
@@ -69,23 +69,22 @@ def MS_multivar_bidirectional_model(model_configs, X, y, val_X, val_y):
     model.add(LSTM(n_nodes))
     model.add(Dense(37))
 
-    custom_sgd = SGD(lr=4e-1, momentum=0.9)
-    clr = CyclicLR(mode='triangular2')
-    model.compile(loss='mse', optimizer='adam', metrics=['mae'])
+    custom_sgd = SGD(lr=6e-3, momentum=0.9)
+    clr = CyclicLR(mode='triangular2', base_lr=1e-5, max_lr=6e-3)
+    model.compile(loss='mse', optimizer=custom_sgd, metrics=['mae'])
     # fit network
     model.fit(X, y, epochs=n_epochs, batch_size=n_batch, verbose=2, validation_data=(val_X, val_y), callbacks=[clr])
     return model
 
-for i in range(1, 3+1):
-    print(i)
 
-#df_loss, df_metric = ModelDiagnostics.multicat_grid_search_diagnostics(model_function=MS_multivar_bidirectional_model,
-#                                                                       train=train,
-#                                                                       test=test,
-#                                                                       setting=setting,
-#                                                                       model_configs=model_configs,
-#                                                                       data_handler=LDM.MS_to_supervised,
-#                                                                       iterations=1)
+
+df_loss, df_metric = ModelDiagnostics.multicat_grid_search_diagnostics(model_function=MS_multivar_bidirectional_model,
+                                                                       train=train,
+                                                                       test=test,
+                                                                       setting=setting,
+                                                                       model_configs=model_configs,
+                                                                       data_handler=LDM.MS_to_supervised,
+                                                                       iterations=3)
 
 
 
@@ -108,16 +107,16 @@ def MS_LR_model(model_configs, X, y):
 
     custom_sgd = SGD(lr=4e-1, momentum=0.9)
     clr = CyclicLR(mode='triangular2')
-    model.compile(loss='mse', optimizer='sgd', metrics=['mae'])
+    model.compile(loss='mse', optimizer='adam', metrics=['mae'])
     lr_finder = ModelDiagnostics.LRFinder(min_lr=1e-8, max_lr=1)
     # fit network
     model.fit(X, y, epochs=n_epochs, batch_size=n_batch, verbose=2, callbacks=[lr_finder])
     return model
 
 
-ModelDiagnostics.learning_rate_finder(model_function=MS_LR_model,
-                                                                       train=train,
-                                                                       test=test,
-                                                                       setting=setting,
-                                                                       model_configs=model_configs[0],
-                                                                       data_handler=LDM.MS_to_supervised)
+#ModelDiagnostics.learning_rate_finder(model_function=MS_LR_model,
+#                                                                       train=train,
+#                                                                       test=test,
+#                                                                       setting=setting,
+#                                                                       model_configs=model_configs[0],
+#                                                                       data_handler=LDM.MS_to_supervised)

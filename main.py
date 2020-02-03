@@ -87,7 +87,7 @@ columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'School
 # Univariate LSTM Model
 setting = ADM.MS_create_setting(multi_steps=37, repeats=5, target='Sales', category=None, predict_transform='minmax',
                                 minmax=['Sales', 'Customers'])
-model_configs = ADM.MS_lstm_model_configs(n_input=[22, 28, 44, 74], n_nodes=[64], n_epochs=[35], n_batch=[7], n_seq=[2],
+model_configs = ADM.MS_lstm_model_configs(n_input=[74], n_nodes=[64], n_epochs=[35], n_batch=[7], n_seq=[2],
                                           model_type='cnnlstm')
 train, test = ADM.MS_split_dataset(subset_data, config=setting, columns=columns)
 
@@ -160,7 +160,7 @@ print(timer() - start)
 # train = pd.DataFrame(scaler.transform(train), columns=train.columns, index=train.index)
 # test = pd.DataFrame(scaler.transform(test), columns=test.columns, index=test.index)
 #
-df_result = ADM.MS_grid_search(ADM.MS_build_multivar_cnnlstm_modelB, model_configs=model_configs, train=train, test=test, setting=setting, iterations=5)
+df_result = ADM.MS_grid_search(ADM.MS_build_resnet_model, model_configs=model_configs, train=train, test=test, setting=setting, iterations=5)
 
 #multi_steps, repeats, target, category, predict_transform, minmax, stdiz, onehot_encode = setting
 #train, test, scalers, targetScalers = ADM.MS_preprocess(train=train, test=test, target=target,

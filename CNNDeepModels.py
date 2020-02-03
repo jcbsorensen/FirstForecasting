@@ -110,27 +110,7 @@ def MS_build_univar_model(train, model_configs, multi_steps, target):
     return model
 
 
-# train the model
-def MS_build_multivar_model(train, model_configs, multi_steps, target):
-    # prepare data
-    n_inputs, n_filters, n_kernels, n_epochs, n_batch = model_configs
-    train_x, train_y = MS_to_supervised(train, n_inputs, multi_steps, target)
-    # define parameters
-    n_timesteps, n_features, n_outputs = train_x.shape[1], train_x.shape[2], train_y.shape[1]
-    # define model
-    model = Sequential()
-    model.add(Conv1D(32, 3, activation='relu', input_shape=(n_timesteps,n_features)))
-    model.add(Conv1D(32, 3, activation='relu'))
-    model.add(MaxPooling1D())
-    model.add(Conv1D(16, 3, activation='relu'))
-    model.add(MaxPooling1D())
-    model.add(Flatten())
-    model.add(Dense(100, activation='relu'))
-    model.add(Dense(n_outputs))
-    model.compile(loss='mse', optimizer='adam', metrics=['mae'])
-    # fit network
-    model.fit(train_x, train_y, epochs=n_epochs, batch_size=n_batch, verbose=0)
-    return model
+
 
 
 

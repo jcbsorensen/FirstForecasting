@@ -21,6 +21,8 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from keras.layers import ConvLSTM2D
 from timeit import default_timer as timer
 from clr_callback import *
+from keras.applications.resnet50 import ResNet50
+from keras.models import Model
 
 
 def MS_create_setting(multi_steps, repeats, target, category, predict_transform, minmax=None, stdiz=None, onehot_encode=None):
@@ -232,6 +234,26 @@ def MS_build_multivar_convlstm_model(train, model_configs, multi_steps, target):
     model.compile(loss='mse', optimizer=custom_sgd, metrics=['mae'])
     # fit network
     model.fit(train_x, train_y, epochs=n_epochs, batch_size=n_batch, verbose=0, callbacks=[clr])
+    return model
+
+
+# train the model
+def MS_build_resnet_model(train, model_configs, multi_steps, target, category):
+    # prepare data
+    n_inputs, n_nodes, n_epochs, n_batch, n_seq, model_type = model_configs
+    train_x, train_y = MS_to_supervised(train, n_inputs, multi_steps, target, category)
+    # define parameters
+    n_timesteps, n_features, n_outputs = train_x.shape[1], train_x.shape[2], train_y.shape[1]
+    # reshape output into [samples, timesteps, features]
+    train_x = train_x.reshape((train_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
+    # define model
+    resnet = ResNet50(weights=None, input_shape=(2, int((n_timesteps / n_seq)), n_features), include_top=False)
+    resnet_output = resnet.output
+    forecast = Dense(n_outputs)(resnet_output)
+    model = Model(inputs=resnet.input, outputs=forecast)
+    model.compile(loss='mse', optimizer='adam', metrics=['mae'])
+    # fit network
+    model.fit(train_x, train_y, epochs=n_epochs, batch_size=n_batch, verbose=0)
     return model
 
 
