@@ -132,7 +132,7 @@ def MS_build_multivar_cnnlstm_modelB(config, X, y, val_X, val_y):
     custom_adamax = opt.adamax(lr=4e-1)
     custom_sgd = SGD(lr=4e-1, momentum=0.9)
     clr = CyclicLR(mode='triangular2')
-    model.compile(loss='mse', optimizer='adamax', metrics=['mae'])
+    model.compile(loss='mae', optimizer='adamax', metrics=['mae'])
     # fit network
     model.fit(X, y, epochs=35, batch_size=7, verbose=2, validation_data=(val_X, val_y), callbacks=[clr])
     return model
@@ -160,7 +160,7 @@ print(timer() - start)
 # train = pd.DataFrame(scaler.transform(train), columns=train.columns, index=train.index)
 # test = pd.DataFrame(scaler.transform(test), columns=test.columns, index=test.index)
 #
-df_result = ADM.MS_grid_search(ADM.MS_build_resnet_model, model_configs=model_configs, train=train, test=test, setting=setting, iterations=5)
+df_result = ADM.MS_grid_search(ADM.MS_build_multivar_cnnlstm_modelB, model_configs=model_configs, train=train, test=test, setting=setting, iterations=5)
 
 #multi_steps, repeats, target, category, predict_transform, minmax, stdiz, onehot_encode = setting
 #train, test, scalers, targetScalers = ADM.MS_preprocess(train=train, test=test, target=target,

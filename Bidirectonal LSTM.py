@@ -51,7 +51,7 @@ columns = ['Sales', 'Customers', 'Open', 'Month', 'Weekofyear', 'Promo', 'School
 # Univariate LSTM Model
 setting = ADM.MS_create_setting(multi_steps=37, repeats=5, target='Sales', category=None, predict_transform='minmax',
                                 minmax=['Sales', 'Customers'])
-model_configs = ADM.MS_lstm_model_configs(n_input=[74], n_nodes=[50], n_epochs=[50], n_batch=[7], n_seq=[2],
+model_configs = ADM.MS_lstm_model_configs(n_input=[74], n_nodes=[50], n_epochs=[8], n_batch=[7], n_seq=[2],
                                           model_type='cnnlstm')
 train, test = ADM.MS_split_dataset(subset_data, config=setting, columns=columns)
 
@@ -67,11 +67,11 @@ def MS_multivar_bidirectional_model(model_configs, X, y, val_X, val_y):
     model = Sequential()
     model.add(Bidirectional(LSTM(50, activation='sigmoid', return_sequences=True), input_shape=(n_timesteps, n_features)))
     model.add(LSTM(n_nodes))
-    model.add(Dense(37))
+    model.add(Dense(37, activation='linear'))
 
     custom_sgd = SGD(lr=6e-3, momentum=0.9)
     clr = CyclicLR(mode='triangular2', base_lr=1e-5, max_lr=6e-3)
-    model.compile(loss='mse', optimizer=custom_sgd, metrics=['mae'])
+    model.compile(loss='mae', optimizer=custom_sgd, metrics=['mae', 'mse'])
     # fit network
     model.fit(X, y, epochs=n_epochs, batch_size=n_batch, verbose=2, validation_data=(val_X, val_y), callbacks=[clr])
     return model
