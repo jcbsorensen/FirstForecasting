@@ -50,14 +50,14 @@ def grid_search_diagnostics(model_function, variables, train, test, setting, mod
 
         # cnnLSTM reshape
         n_timesteps, n_features, n_outputs = train_x.shape[1], train_x.shape[2], train_y.shape[1]
-        train_x = train_x.reshape((train_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
-        val_x = val_x.reshape((val_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
+        #train_x = train_x.reshape((train_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
+        #val_x = val_x.reshape((val_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
 
         # convLSTM reshape
-        #train_x = train_x.reshape((train_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
-        #train_y = train_y.reshape((train_y.shape[0], train_y.shape[1], 1))
-        #val_x = val_x.reshape((val_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
-        #val_y = val_y.reshape((val_y.shape[0], val_y.shape[1], 1))
+        train_x = train_x.reshape((train_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
+        train_y = train_y.reshape((train_y.shape[0], train_y.shape[1], 1))
+        val_x = val_x.reshape((val_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
+        val_y = val_y.reshape((val_y.shape[0], val_y.shape[1], 1))
 
         train_loss_scores = pd.DataFrame()
         val_loss_scores = pd.DataFrame()
@@ -138,15 +138,15 @@ def multicat_grid_search_diagnostics(model_function, train, test, setting, model
         val_x, val_y = data_handler(train=test, n_inputs=n_inputs, multi_steps=multi_steps, target=target, category=category)
 
         # cnnLSTM reshape
-        #n_timesteps, n_features, n_outputs = train_x.shape[1], train_x.shape[2], train_y.shape[1]
+        n_timesteps, n_features, n_outputs = train_x.shape[1], train_x.shape[2], train_y.shape[1]
         #train_x = train_x.reshape((train_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
         #val_x = val_x.reshape((val_x.shape[0], n_seq, int((n_timesteps / n_seq)), n_features))
 
         #convLSTM reshape
-        #train_x = train_x.reshape((train_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
-        #train_y = train_y.reshape((train_y.shape[0], train_y.shape[1], 1))
-        #val_x = val_x.reshape((val_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
-        #val_y = val_y.reshape((val_y.shape[0], val_y.shape[1], 1))
+        train_x = train_x.reshape((train_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
+        train_y = train_y.reshape((train_y.shape[0], train_y.shape[1], 1))
+        val_x = val_x.reshape((val_x.shape[0], n_seq, 1, int((n_timesteps / n_seq)), n_features))
+        val_y = val_y.reshape((val_y.shape[0], val_y.shape[1], 1))
 
         train_loss_scores = pd.DataFrame()
         val_loss_scores = pd.DataFrame()
@@ -223,8 +223,6 @@ def learning_rate_finder(model_function, train, test, setting, model_configs, da
 
     train_x, train_y = data_handler(train=train, n_inputs=n_inputs, multi_steps=multi_steps, target=target,
                                     category=category)
-    val_x, val_y = data_handler(train=test, n_inputs=n_inputs, multi_steps=multi_steps, target=target,
-                                category=category)
 
     model_function(model_configs, X=train_x, y=train_y)
 

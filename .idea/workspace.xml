@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b64ae94-e6c9-4c54-8112-d8b1fde461dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ConvLSTM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Prep.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bidirectonal LSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bidirectonal LSTM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelDiagnostics.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelDiagnostics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.hdf5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
       <recent name="E:\Git Projects\PyCharm Projects\FirstForecasting" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Bidirectonal LSTM">
+  <component name="RunManager" selected="Python.ConvLSTM">
     <configuration name="02_cnn_lstm_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FirstForecasting" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,54 +73,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="03_multivariate_encoder_decoder_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FirstForecasting" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/03_multivariate_encoder_decoder_lstm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="05_convlstm_encoder_decoder_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FirstForecasting" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20/05_convlstm_encoder_decoder_lstm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Bidirectonal LSTM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FirstForecasting" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -125,6 +87,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bidirectonal LSTM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ConvLSTM" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ConvLSTM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Data Prep" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FirstForecasting" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Prep.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -181,6 +187,9 @@
       <module name="FirstForecasting" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -198,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ConvLSTM" />
+        <item itemvalue="Python.Data Prep" />
         <item itemvalue="Python.Bidirectonal LSTM" />
         <item itemvalue="Python.02_cnn_lstm_model" />
         <item itemvalue="Python.LSTMDeepModels" />
-        <item itemvalue="Python.03_multivariate_encoder_decoder_lstm" />
-        <item itemvalue="Python.05_convlstm_encoder_decoder_lstm" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +269,12 @@
       <workItem from="1580322553261" duration="7885000" />
       <workItem from="1580363503209" duration="229000" />
       <workItem from="1580655546619" duration="9657000" />
-      <workItem from="1580840441021" duration="3811000" />
+      <workItem from="1580840441021" duration="4013000" />
+      <workItem from="1581014895641" duration="1198000" />
+      <workItem from="1581099584053" duration="1174000" />
+      <workItem from="1581234911886" duration="12626000" />
+      <workItem from="1581358479886" duration="3488000" />
+      <workItem from="1582367339434" duration="1230000" />
     </task>
     <task id="LOCAL-00001" summary="Found optimal LR and batch size">
       <created>1580764348357</created>
@@ -269,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580764348357</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed loss function to MAE">
+      <created>1580850017253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580850017253</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,79 +311,80 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Found optimal LR and batch size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Found optimal LR and batch size" />
+    <MESSAGE value="Changed loss function to MAE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed loss function to MAE" />
   </component>
   <component name="WindowStateProjectService">
     <state x="989" y="452" key="#xdebugger.XInspectDialog" timestamp="1578833085703">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="452" key="#xdebugger.XInspectDialog/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1578833085703" />
-    <state x="905" y="294" key="CommitChangelistDialog2" timestamp="1580764347553">
+    <state x="905" y="294" key="CommitChangelistDialog2" timestamp="1580850016513">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="905" y="294" key="CommitChangelistDialog2/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764347553" />
+    <state x="905" y="294" key="CommitChangelistDialog2/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580850016513" />
     <state width="1730" height="466" key="DebuggerActiveHint" timestamp="1579114801589">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1730" height="466" key="DebuggerActiveHint/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1579114801589" />
-    <state width="2517" height="319" key="GridCell.Tab.0.bottom" timestamp="1580764372623">
+    <state width="2517" height="319" key="GridCell.Tab.0.bottom" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
-    <state width="2517" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372623" />
-    <state width="2517" height="319" key="GridCell.Tab.0.center" timestamp="1580764372623">
+    <state width="2517" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
+    <state width="2517" height="319" key="GridCell.Tab.0.center" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
-    <state width="2517" height="319" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372623" />
-    <state width="2517" height="319" key="GridCell.Tab.0.left" timestamp="1580764372623">
+    <state width="2517" height="319" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
+    <state width="2517" height="319" key="GridCell.Tab.0.left" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
-    <state width="2517" height="319" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372623" />
-    <state width="2517" height="319" key="GridCell.Tab.0.right" timestamp="1580764372623">
+    <state width="2517" height="319" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
+    <state width="2517" height="319" key="GridCell.Tab.0.right" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
-    <state width="2517" height="319" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372623" />
-    <state width="2517" height="319" key="GridCell.Tab.1.bottom" timestamp="1580764372624">
+    <state width="2517" height="319" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
+    <state width="2517" height="319" key="GridCell.Tab.1.bottom" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714324" />
-    <state width="2517" height="319" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372624" />
-    <state width="2517" height="319" key="GridCell.Tab.1.center" timestamp="1580764372624">
+    <state width="2517" height="319" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
+    <state width="2517" height="319" key="GridCell.Tab.1.center" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
-    <state width="2517" height="319" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372624" />
-    <state width="2517" height="319" key="GridCell.Tab.1.left" timestamp="1580764372623">
+    <state width="2517" height="319" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
+    <state width="2517" height="319" key="GridCell.Tab.1.left" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
-    <state width="2517" height="319" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372623" />
-    <state width="2517" height="319" key="GridCell.Tab.1.right" timestamp="1580764372624">
+    <state width="2517" height="319" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
+    <state width="2517" height="319" key="GridCell.Tab.1.right" timestamp="1581284062546">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="330" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579906714323" />
-    <state width="2517" height="319" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764372624" />
+    <state width="2517" height="319" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581284062546" />
     <state x="781" y="342" key="SettingsEditor" timestamp="1579726406676">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1579726406676" />
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1580764351899">
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1580850019300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580764351899" />
-    <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1579439949315">
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580850019300" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1581359410783">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="966" height="587" key="XDebugger.FullValuePopup/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579348835257" />
-    <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1579439949315" />
-    <state x="976" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1580842312028">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1581359410783" />
+    <state x="-1188" y="578" key="com.intellij.ide.util.TipDialog" timestamp="1582917785210">
+      <screen x="-1920" y="145" width="1920" height="1160" />
     </state>
-    <state x="-1188" y="578" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1579948652860" />
-    <state x="976" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1580842312028" />
+    <state x="-1188" y="578" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.145.1920.1160@-1920.145.1920.1160" timestamp="1582917785210" />
+    <state x="976" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.145.1920.1160@0.0.2560.1400" timestamp="1582367339444" />
     <state x="1089" y="616" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580655554579">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -433,6 +455,7 @@
     <SUITE FILE_PATH="coverage/FirstForecasting$ARIMAModels.coverage" NAME="ARIMAModels Coverage Results" MODIFIED="1578827559372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FirstForecasting$NaiveModels.coverage" NAME="NaiveModels Coverage Results" MODIFIED="1578606300800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FirstForecasting$01_cnn_univariate_model.coverage" NAME="01_cnn_univariate_model Coverage Results" MODIFIED="1579111448924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_19" />
+    <SUITE FILE_PATH="coverage/FirstForecasting$ConvLSTM.coverage" NAME="ConvLSTM Coverage Results" MODIFIED="1581282119742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FirstForecasting$04_naive_forecasts.coverage" NAME="04_naive_forecasts Coverage Results" MODIFIED="1578339042142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_17" />
     <SUITE FILE_PATH="coverage/FirstForecasting$Bidirectonal_LSTM.coverage" NAME="Bidirectonal LSTM Coverage Results" MODIFIED="1580760242426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FirstForecasting$05_convlstm_encoder_decoder_lstm.coverage" NAME="05_convlstm_encoder_decoder_lstm Coverage Results" MODIFIED="1579201527897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Deep Learning Mastery/Deep Learning Time Series Forecasting/code/chapter_20" />
